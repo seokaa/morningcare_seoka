@@ -12,15 +12,30 @@
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:src="@drawable/mc"/>
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재시간"
+        android:textSize="20dp" />
+
+    <EditText
+        android:textColor="@android:color/white"
+        android:id="@+id/editText0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
     <TextView
         android:layout_marginTop="15dp"
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="@android:color/white"
         android:text="출근시간" />
 
@@ -31,54 +46,37 @@
         android:layout_height="wrap_content"
         android:layout_x="0dp"
         android:layout_y="301dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/textView2" />
 
     <TextView
         android:textColor="@android:color/white"
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:text="준비시간"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/editText" />
 
     <EditText
         android:textColor="@android:color/white"
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_x="1dp"
-        android:layout_y="181dp"
-        android:layout_below="@+id/textView1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/textView1" />
 
 
     <TextView
         android:textColor="@android:color/white"
-        android:layout_marginTop="15dp"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="3dp"
-        android:layout_y="284dp"
         android:text="버스"
-        android:textSize="30dp" />
+        android:textSize="20dp" />
 
     <EditText
         android:textColor="@android:color/white"
         android:id="@+id/editText3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="169dp"
-    />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

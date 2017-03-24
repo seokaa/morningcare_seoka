@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.shinhan.morningcare"
+        applicationId "com.shinhan.dictionaryexam"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -19,7 +19,6 @@ android {
     }
 }
 
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -27,6 +26,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.naver.maps.open:naver-map-api:2.1.2@aar'
     testCompile 'junit:junit:4.12'
 }
