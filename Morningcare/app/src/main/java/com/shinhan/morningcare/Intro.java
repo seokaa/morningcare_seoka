@@ -19,8 +19,6 @@ public class Intro extends AppCompatActivity {
                 Intent intent = new Intent(Intro.this, MainActivity.class);
                 startActivity(intent);
             }
-        }, 3000);
+        }, 3*1000); // 3초
     }
-
-
 }
