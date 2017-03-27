@@ -1,6 +1,8 @@
 package com.shinhan.morningcare;
 
+import android.app.AlarmManager;
 import android.app.DatePickerDialog;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -85,9 +87,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 timeSetting2(R.id.d2dTimeText);
                 break;
             case R.id.completeButton:
+
                 Toast.makeText(MainActivity.this, "설정되었습니다", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);
+
+
+                /*
+                Intent intent = new Intent(MainActivity.this,
+                        AlarmReceiver.class);
+                PendingIntent pender = PendingIntent.getBroadcast(
+                        MainActivity.this, 0, intent, 0);
+
+                EditText edit1 = (EditText) this.findViewById(R.id.edit1);
+                int year = Integer.valueOf(edit1.getText().toString());
+                EditText edit2 = (EditText) this.findViewById(R.id.edit2);
+                int month = Integer.valueOf(edit2.getText().toString());
+                EditText edit3 = (EditText) this.findViewById(R.id.edit3);
+                int day = Integer.valueOf(edit3.getText().toString());
+                EditText edit4 = (EditText) this.findViewById(R.id.edit4);
+                int hour = Integer.valueOf(edit4.getText().toString());
+                EditText edit5 = (EditText) this.findViewById(R.id.edit5);
+                int minute = Integer.valueOf(edit5.getText().toString());
+
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(year, month - 1, day, hour, minute);
+
+                alarm.set(AlarmManager.RTC, calendar.getTimeInMillis(), pender);
+                */
+
                 break;
         }
 
@@ -141,6 +169,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AlertDialog ad = aDialog.create();
         ad.show();
     }
-
-
 }

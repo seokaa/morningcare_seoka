@@ -13,9 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Setting" />
-        <activity android:name=".Alarm"></activity>
+        <activity android:name=".Alarm" />
         <activity android:name=".Countdown" />
         <activity android:name=".SelectBus" />
         <activity android:name=".Intro">
@@ -25,12 +25,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BusStop"></activity>
+        <activity android:name=".BusStop" />
 
         <receiver
-            android:name=".BroadcastD"
+            android:name=".AlarmReceiver"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="true"></receiver>
     </application>
 
 </manifest>
